@@ -1,0 +1,86 @@
+@use "../base/" as *;
+
+.container {
+  height: 596px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: $card-bg;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.rectangle {
+  height: 302px;
+  width: 302px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 22px;
+  width: 302px;
+  margin: 0 0 24px 0;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: $softblue;
+  margin: 0 0 24px 0;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  .price {
+    display: flex;
+    align-items: center;
+
+    .iconetherium {
+      height: 18px;
+      width: 11px;
+      margin: 0 6px 0 0;
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+
+    .icontime {
+      margin: 0 7.7px 0 0;
+    }
+  }
+}
+
+hr {
+  background-color: $line-bg;
+  border: 0px;
+  height: 1px;
+  margin: 0 0 16px 0;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  height: 33px;
+  .hlblue {
+    color: $softblue;
+  }
+
+  .iconavatar {
+    height: 33px;
+    width: 33px;
+    border: 1px solid $white;
+    border-radius: 100%;
+    margin-right: 16px;
+  }
+}
