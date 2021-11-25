@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cyreeosp/public_html/portfolio/nft
+    - /bin/cp /home/cyreeosp/repositories/frontendchallenge_nft/* $DEPLOYPATH
