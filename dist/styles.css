@@ -31,17 +31,46 @@ body {
   padding: 24px;
 }
 
-.rectangle {
+.displayphoto {
   height: 302px;
   width: 302px;
   border-radius: 8px;
   margin-bottom: 24px;
+  background-image: url("../../../images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
 }
 
-h2 {
+.displayphoto:hover {
+  cursor: pointer;
+}
+
+.displayphoto:hover::before {
+  content: "";
+  display: block;
+  background-image: url("../../../images/icon-view.svg");
+  /* your background */
+  width: 48px;
+  /* image width */
+  height: 48px;
+  /* image height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
   font-size: 22px;
   width: 302px;
   margin: 0 0 24px 0;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: #00fff7;
 }
 
 .description {
@@ -57,24 +86,32 @@ h2 {
   justify-content: space-between;
   margin-bottom: 24px;
 }
-.status .price {
+.status__price {
   display: flex;
   align-items: center;
 }
-.status .price .iconetherium {
+.status__price--iconetherium {
   height: 18px;
   width: 11px;
   margin: 0 6px 0 0;
 }
-.status .time {
+.status__price--pricelabel {
+  color: #00fff7;
+}
+.status__time {
   display: flex;
   align-items: center;
 }
-.status .time .icontime {
-  margin: 0 7.7px 0 0;
+.status__time--icontime {
+  margin: 0 6px 0 0;
+  height: 16px;
+  width: 16px;
+}
+.status__time--timelabel {
+  color: #8bacda;
 }
 
-hr {
+.divider {
   background-color: #2f415b;
   border: 0px;
   height: 1px;
@@ -88,10 +125,18 @@ hr {
   font-size: 16px;
   height: 33px;
 }
-.credits .hlblue {
+.credits__label {
+  font-size: 16px;
   color: #8bacda;
 }
-.credits .iconavatar {
+.credits__label--link {
+  color: white;
+}
+.credits__label--link:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+.credits__iconavatar {
   height: 33px;
   width: 33px;
   border: 1px solid white;
