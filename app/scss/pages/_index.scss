@@ -17,7 +17,7 @@
   width: 302px;
   border-radius: 8px;
   margin-bottom: 24px;
-  background-image: url($assetspath + "image-equilibrium.jpg");
+  background-image: url($assetspath + "/image-equilibrium.jpg");
   background-position: center;
   background-size: 100%;
   position: relative;
@@ -31,7 +31,7 @@
 .displayphoto:hover::before {
   content: "";
   display: block;
-  background-image: url($assetspath + "icon-view.svg"); /* your background */
+  background-image: url($assetspath + "/icon-view.svg"); /* your background */
   width: 48px; /* image width */
   height: 48px; /* image height */
   position: absolute;
