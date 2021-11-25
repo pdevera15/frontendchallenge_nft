@@ -1,5 +1,8 @@
 @use "../base/typhography" as *;
 @use "../base/colors" as *;
+
+$assetspath: "../images/";
+
 html {
   font-size: 1.125em;
   box-sizing: border-box;
